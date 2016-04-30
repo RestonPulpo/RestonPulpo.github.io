@@ -54,14 +54,14 @@
         }
         .tablap{
         	width: 35%; 
-        	margin-left: 5.6%; 
+        	margin-left: 5em; 
         	margin-right: 0.5%;
 			border-radius: 10px 10px 10px 10px;
 			border: 2px solid #000000;
 			background-color:#ffffff;
         }
         .tablai{
-			width: 5%; 
+			width: 3em; 
 			height: 90%; 
 			z-index: 1; 
 			left: 0.3%;
