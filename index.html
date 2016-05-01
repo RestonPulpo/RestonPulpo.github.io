@@ -5,8 +5,16 @@
 <body>
 	<div id="id01"></div>
 	<script>
+	var api="";
+	var api1=new XMLHttpRequest();
+	api1.open("GET", "api.txt",false);
+	api1.onreadystatechange=function() {
+        alert(api1.responseText);
+	}
+	api1.send(null);
+	var inv="restonpiston";
 	var xmlhttp = new XMLHttpRequest();
-var url = "https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/restonpiston?api_key=fcb02306-537c-497a-8704-b804c1e73d1e";
+var url = "https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/restonpiston?api_key="+api;
 xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         processRequest(xmlhttp.responseText);
@@ -20,9 +28,9 @@ xmlhttp.send();
 function processRequest(e) {
 		var arr=JSON.parse(e);
 		 	alert(e);
- 	alert(arr.restonpiston);
+ 	alert(arr.restonpiston.id);
 
-	document.getElementById("id01").innerHTML =arr[1].id;
+	document.getElementById("id01").innerHTML =arr.restonpiston.id;
 }
 
 </script>
