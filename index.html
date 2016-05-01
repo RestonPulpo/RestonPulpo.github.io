@@ -8,7 +8,7 @@
 	//Sacar la API
 	var api="";
 	var api1=new XMLHttpRequest();
-	api1.open("GET", "api.txt");
+	api1.open("GET", "api.txt",false);
 	api1.onreadystatechange=function() {
         api=api1.responseText;
 	}
