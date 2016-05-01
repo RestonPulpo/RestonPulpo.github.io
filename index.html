@@ -19,7 +19,7 @@
 	var id=0;
 	var inv="restonpiston";
 	var xmlhttp = new XMLHttpRequest();
-var url = "https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/"+inv+"?api_key="+api;
+var url = "https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/restonpiston?api_key="+api;
 xmlhttp.onreadystatechange=function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
         processRequest(xmlhttp.responseText);
@@ -33,8 +33,6 @@ function processRequest(e) {
  	id=arr.restonpiston.id;
 }
 
-
-	//url = "https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/restonpiston?api_key="+api;
 </script>
 </body>
 </html>
