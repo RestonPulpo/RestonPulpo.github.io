@@ -7,15 +7,11 @@
 	<script>
 	var api="";
 	var api1=new XMLHttpRequest();
-	api1.open("GET", "api.txt");
+	api1.open("GET", "api.txt",false);
 	api1.onreadystatechange=function() {
         api=api1.responseText;
 	}
 	api1.send(null);
-
-
-
-	var id=0;
 	var inv="restonpiston";
 	var xmlhttp = new XMLHttpRequest();
 var url = "https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/restonpiston?api_key="+api;
