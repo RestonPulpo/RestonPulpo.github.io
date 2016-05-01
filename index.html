@@ -10,6 +10,7 @@
 	api1.open("GET", "api.txt");
 	api1.onreadystatechange=function() {
         api=api1.responseText;
+        alert(api);
 	}
 	api1.send();
 
