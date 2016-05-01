@@ -9,7 +9,7 @@
 	var api1=new XMLHttpRequest();
 	api1.open("GET", "api.txt",false);
 	api1.onreadystatechange=function() {
-        alert(api1.responseText);
+        api=api1.responseText;
 	}
 	api1.send(null);
 	var inv="restonpiston";
